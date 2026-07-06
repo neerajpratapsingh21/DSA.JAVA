@@ -99,6 +99,6 @@ HashSet<Integer> seen = new HashSet<>();
 
 public static void main(String[] args) {
     int nums[]={1000000000,1000000000,1000000000,1000000000};
-    System.out.println();
+    System.out.println(nums);
 }    
 }
