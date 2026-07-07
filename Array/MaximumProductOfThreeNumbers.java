@@ -1,9 +1,8 @@
 import java.util.Arrays;
 
-/**
- * MaximumProductOfThreeNumbers
- */
+
 public class MaximumProductOfThreeNumbers {
+    
     public int bruteForce(int[] nums) {
         int n=nums.length;
         int maxProduct=Integer.MIN_VALUE;
