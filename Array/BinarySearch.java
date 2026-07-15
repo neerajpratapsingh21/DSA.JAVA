@@ -1,6 +1,8 @@
 package array;
 
 public class BinarySearch {
+    // Time : O(log(n))
+    // Space : O(1)
     public static void Binarysearch(int arr[],int key){
         int f=0;
         int l=arr.length-1;
