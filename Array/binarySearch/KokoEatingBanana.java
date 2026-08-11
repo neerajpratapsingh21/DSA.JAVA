@@ -7,7 +7,6 @@ class Solution {
     public static int calculateTotalHours(int[] arr, int hourly) {
         int totalHours = 0;
         for (int pile : arr) {
-            // Add hours using ceil
             totalHours += (int)Math.ceil((double)pile / hourly);
         }
         return totalHours;
@@ -15,10 +14,7 @@ class Solution {
 
     // Function to find minimum eating speed
     public static int bruteForce(int[] arr, int h) {
-        // Find maximum pile size............
         int maxVal = Arrays.stream(arr).max().getAsInt();
-
-        // Try every possible speed
         for (int i = 1; i <= maxVal; i++) {
             int hours = calculateTotalHours(arr, i);
 
