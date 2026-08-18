@@ -9,25 +9,18 @@ public class PascleCase {
                 int sum=0;
                 for(int k=i;k<=j;k++){
                  sum+=arr[k];
-                
                 }
-                 if(maxsum<sum){
-                   
+                 if(maxsum<sum){              
                     maxsum=sum;
                     startindex=i;
                     endindex=j;
-                    
                  }
             }
-
         }
         for(int i=startindex;i<=endindex;i++){
             System.out.print(arr[i]+" ");
         }
-
-         System.out.println("Max Sub array sum = "+maxsum);
-        
-       
+         System.out.println("Max Sub array sum = "+maxsum);               
     }
     // using Prefix sum (Time complexity - O(n^2) & Space complexity- O(n))
     public static void MaxSubArraySum_PrefixSum(int arr[]){
@@ -51,29 +44,21 @@ public class PascleCase {
                  if(maxsum<sum){
                     maxsum=sum;
                  startindex=i;
-         endindex=j;
-                    
+         endindex=j;                 
                  }
             }
-
-        }
-        
+        }        
          System.out.println("Max Sub array sum = "+maxsum);
         for(int i=startindex;i<=endindex;i++){
             System.out.print(arr[i]+" ");
-        }
-       
+        }      
     }
-    // kadane Algorithm (Time complexity - O(n) & Space complexity- O(1))
-
-     public static void MaxSubArraySum_KadaneAlgorithm(int arr[]){
+    // kadane Algorithm (Time complexity - O(n) & Space complexity- O(1)
+    public static void MaxSubArraySum_KadaneAlgorithm(int arr[]){
         int maxsum=arr[0];
-        int currsum=0;
-        
-      
+        int currsum=0;    
         for(int i=0;i<arr.length;i++){
-          currsum=currsum+arr[i];
-        
+          currsum=currsum+arr[i];    
     maxsum=Math.max(maxsum, currsum);
       if(currsum<0){
             currsum=0;
@@ -81,12 +66,8 @@ public class PascleCase {
                }
                 System.out.println("Max Sub array sum = "+maxsum);
                
-        }
-       
-    
-    
+        } 
     public static void main(String[] args) {
         int arr[]={-2,-3,-4,-1,-2,-1,-5,-3};
-       
     }
 }
