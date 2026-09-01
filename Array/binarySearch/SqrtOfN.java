@@ -1,4 +1,4 @@
-package binarysearch;
+package array.binarySearch;
 
 public class SqrtOfN {
     public static int bruteForce(int n){

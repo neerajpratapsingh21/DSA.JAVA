@@ -1,3 +1,4 @@
+package array;
 public class MaximumAverageSubArray {
     public static double bruteForce(int nums[],int k){
         int n=nums.length;

@@ -1,4 +1,4 @@
-package binarysearch;
+package array.binarySearch;
 public class PutGasStations {
     public static double minimizeMaxDistance(int arr[],int k){
       int n=arr.length;

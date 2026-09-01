@@ -1,4 +1,4 @@
-package binarysearch;
+package array.binarySearch;
 public class PaintersPartition{
      public static int findMax(int arr[]){
         int max=Integer.MIN_VALUE;

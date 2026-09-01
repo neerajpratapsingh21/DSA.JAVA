@@ -1,3 +1,4 @@
+package array;
 public class MissingNumber {
     public static int BruteForce(int arr[]){
         int n=arr.length+1;

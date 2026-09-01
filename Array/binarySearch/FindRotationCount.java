@@ -1,4 +1,4 @@
-package binarysearch;
+package array.binarySearch;
 public class FindRotationCount {
       public static int findTimes(int[] arr) {
        // Initialize low and high pointers

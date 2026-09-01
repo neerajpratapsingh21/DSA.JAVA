@@ -1,4 +1,4 @@
-package binarysearch;
+package array.binarySearch;
 public class MinDaysToBloomingFlowers {
     public static int minimum(int arr[]){
         int min=Integer.MAX_VALUE;

@@ -1,3 +1,4 @@
+package array;
 public class ThirdMaximumNumber {
     public static int thirdMaximum(int nums[]){
         long max=Long.MIN_VALUE;

@@ -1,4 +1,4 @@
-package binarysearch;
+package array.binarySearch;
 
 public class SmallestDivisor {
     public static int bruteForce(int arr[],int threshold)

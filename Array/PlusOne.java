@@ -1,3 +1,4 @@
+package array;
 public class PlusOne {
     public static int[] plusByOne(int nums[]){
         int n=nums.length;

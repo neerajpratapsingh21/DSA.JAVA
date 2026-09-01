@@ -1,3 +1,4 @@
+package array;
 
 public class Maxsubarraysum {
     // Brute force method (Time complexity - O(n^3) & Space complexity- O(1))

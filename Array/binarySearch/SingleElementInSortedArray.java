@@ -1,4 +1,4 @@
-package binarysearch;
+package array.binarySearch;
 
 public class SingleElementInSortedArray {
     public static int bruteforce(int arr[]){

@@ -1,4 +1,4 @@
-package binarysearch;
+package array.binarySearch;
 
 public class SearchInRotatedSortedArrayII {
      public  static boolean search(int[] nums, int x) {

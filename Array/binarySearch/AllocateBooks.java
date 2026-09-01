@@ -1,4 +1,4 @@
-package binarysearch;
+package array.binarySearch;
 
 public class AllocateBooks {
     public static int findMin(int pages[]){

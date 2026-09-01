@@ -1,4 +1,4 @@
-package binarysearch;
+package array.binarySearch;
 
 /**
  * CountOccurrrenceOfX

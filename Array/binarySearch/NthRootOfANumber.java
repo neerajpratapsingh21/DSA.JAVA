@@ -1,4 +1,4 @@
-package binarysearch;
+package array.binarySearch;
 
 public class NthRootOfANumber {
     public static int bruteForce(int n,int m){

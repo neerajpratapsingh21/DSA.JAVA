@@ -1,4 +1,4 @@
-package binarysearch;
+package array;
 
 public class ShipWithInDays {
     public static int daysReq(int weight[],int capacity){

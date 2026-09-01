@@ -1,3 +1,4 @@
+package array;
 public class ContainerWithMostWater {
     public static int Bruteforce(int height[]){
         int maxarea=0;

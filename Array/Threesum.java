@@ -1,3 +1,4 @@
+package array;
 import java.util.*;
 public class Threesum {
     public static List<List<Integer>> bruteforce(int nums[]){

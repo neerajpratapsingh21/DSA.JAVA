@@ -1,3 +1,4 @@
+package array;
 public class MaximumProductSubArray {
     // BruteForce Approach
     //Time Complexity - O(n^2)

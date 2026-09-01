@@ -1,4 +1,4 @@
-package binarysearch;
+package array.binarySearch;
 
 public class PeakElement {
     public static int bruteForce(int arr[]){

@@ -1,3 +1,4 @@
+package array;
 public class RotateArrayByOne {
     public static void rotateArrayByOne(int arr[]){
         int temp=arr[0];

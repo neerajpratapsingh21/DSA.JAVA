@@ -1,3 +1,4 @@
+package array;
 public class MaximumConsicutiveOnes {
     public static int findMaxConsicutiveOnes(int arr[]){
         int max=0;

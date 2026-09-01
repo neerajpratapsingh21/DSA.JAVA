@@ -1,4 +1,4 @@
-package binarysearch;
+package array.binarySearch;
 public class FirstAndLastPositionInSortedArray {
     public static int first(int nums[],int target){
  int left=0;
