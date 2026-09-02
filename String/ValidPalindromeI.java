@@ -1,5 +1,5 @@
 package string;
-public class Palindrome {
+public class ValidPalindromeI {
     public static  boolean checkPalindrome(String str){
  int n=str.length();
         for(int i=0;i<=n/2;i++){
