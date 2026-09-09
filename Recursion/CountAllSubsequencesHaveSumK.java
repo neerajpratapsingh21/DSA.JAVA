@@ -3,6 +3,9 @@ import java.util.List;
 
 public class CountAllSubsequencesHaveSumK {
      public static int printSubsequence(int arr[], List<Integer> list , int ind ,int n,int sum ,int k,int count){
+        // condition not satisfy 
+        // Strictly done when array contains only positive integers
+        if(sum>k) return  0;
      if(ind>=n){
         // condition satisfied
        if(sum==k){
@@ -26,7 +29,7 @@ public class CountAllSubsequencesHaveSumK {
          int arr[]={1,2,1};
        List<Integer> list = new ArrayList<>();
        int n=arr.length;
-       int k=4;
+       int k=2;
        System.out.println(printSubsequence(arr, list, 0, n, 0, k, 0));
   
     }
