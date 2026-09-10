@@ -69,7 +69,7 @@ ArrayList<Integer> neg = new ArrayList<>();
     }
     }
     public static void main(String[] args) {
-        int arr[]={3,1,-2,5,2,-4};
+      //  int arr[]={3,1,-2,5,2,-4};
         int nums[]={1,2,-1,5,-2,-4};
      // bruteForce(arr);
      // rearrangeUnequalSigns(arr);

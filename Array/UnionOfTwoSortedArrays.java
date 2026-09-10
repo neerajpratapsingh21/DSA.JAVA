@@ -1,5 +1,4 @@
 package array;
-import java.util.HashSet;
 
 public class UnionOfTwoSortedArrays {
 public static void unionof(int arr1[], int arr2[]){
