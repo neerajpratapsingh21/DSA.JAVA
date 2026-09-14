@@ -27,6 +27,7 @@ public class CombinationSumII {
         findCombinationI(ind+1,arr,target,list,ans);
 
     }
+    //Most optimize solution for this problem
      public static  void findCombinationII(int ind,int arr[],int target,List<Integer> list,List<List<Integer>> ans){
             if(target==0){
              ans.add(new ArrayList<>(list));
