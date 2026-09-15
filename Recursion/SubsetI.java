@@ -14,6 +14,7 @@ public class SubsetI {
     // not pick condition , this element is not in your subsequence
     powerSet(arr, list, ind+1,ans);
     }
+    
     public static List<List<Integer>> subsets(int[] nums) {
          List<List<Integer>> ans=new ArrayList<>();
          powerSet(nums,new ArrayList<>(),0,ans);

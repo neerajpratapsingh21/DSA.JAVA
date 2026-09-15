@@ -19,10 +19,20 @@ public class SubsetII {
     // not pick condition , this element is not in your subsequence
     powerSet(arr, list, ind+1,ans);
     }
+    public static  void backtracking(int arr[],List<Integer> list, int ind,List<List<Integer>> ans){
+    ans.add(new ArrayList<>(list));
+    for(int i=ind;i<arr.length;i++){
+        if(i>ind && arr[i]==arr[i-1]) continue;
+         list.add(arr[i]);
+      powerSet(arr, list, i+1,ans);
+      list.remove(list.size()-1);
+    }
+    }
     public static  List<List<Integer>> subsetsWithDup(int[] nums) {
           List<List<Integer>> ans=new ArrayList<>();
           Arrays.sort(nums);
             powerSet(nums, new ArrayList<>(), 0, ans);
+         //    backtracking(nums, new ArrayList<>(), 0, ans);
             return ans;
     }
     public static void main(String[] args) {
