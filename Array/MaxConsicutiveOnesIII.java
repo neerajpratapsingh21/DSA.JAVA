@@ -10,7 +10,8 @@ public class MaxConsicutiveOnesIII {
         }
         return true;
     }
-    public static int longestSubArrayWithAtMostKZeros(int arr[],int k ){
+    // Time Complexity - O(N^3)
+    public static int bruteForce(int arr[],int k ){
         int maxlen=0;
         for(int i=0;i<arr.length;i++){
             for(int j=i;j<arr.length;j++){
@@ -21,7 +22,8 @@ public class MaxConsicutiveOnesIII {
         }
         return maxlen;
     }
-    public static int maxConsicutiveOnes(int arr[], int k){
+    // Time Complexity - O(2N)
+    public static int betterApproach(int arr[], int k){
         int zeros=0;
         int maxlen=0;
         int left=0;
@@ -37,7 +39,24 @@ public class MaxConsicutiveOnesIII {
         }
         return maxlen;
     }
+    // Time Complexity - O(N)
+    public  static  int optimalApproach(int[] arr, int k) {
+        int zeros=0;
+        int maxlen=0;
+        int left=0;
+        for(int right=0;right<arr.length;right++){
+            if(arr[right]==0){
+       zeros++;
+            }
+        if(zeros>k){
+        if(arr[left]==0) zeros--;
+        left++;
+            }
+            maxlen=Math.max(maxlen, right-left+1);
+        }
+        return maxlen;
+    }
     public static void main(String[] args) {
-        System.out.println(maxConsicutiveOnes(new int[]{1,1,1,0,0,0,1,1,1,1,0},2));
+System.out.println(optimalApproach(new int[]{1,0,1,1,1,1,0,1,0,1,0,1,1,1,1,0,0,0,1,1,1}, 75));
     }
 }
