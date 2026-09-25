@@ -3,6 +3,7 @@ package array;
 import java.util.Arrays;
 
 public class TripletWithSmallerSum {
+    // Time Complexity - O(N^3)
     public static int bruteForceApproach(int sum, int[] arr){
         int n = arr.length;
         int ans = 0;
@@ -15,6 +16,7 @@ public class TripletWithSmallerSum {
 }
 return ans;
     }
+    // Time Complexity - O(N^2)
     public static  int countTriplets(int sum, int arr[]) {
         Arrays.sort(arr);
         int n=arr.length;
