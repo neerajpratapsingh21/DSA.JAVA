@@ -1,5 +1,6 @@
 package array;
 public class ContainerWithMostWater {
+    // Time Complexity - O(n^2)
     public static int Bruteforce(int height[]){
         int maxarea=0;
         
@@ -12,6 +13,7 @@ public class ContainerWithMostWater {
         }
         return maxarea;
     }
+    // Time Complexity - O(n)
     public static int Twopointers(int height[]){
         int left=0;
         int right=height.length-1;
